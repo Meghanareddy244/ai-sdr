@@ -1,12 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
 
 // Define the type for the response body
-type Data = {
-  token?: string;
-  error?: string;
-};
 
 // The handler function for the API route
 export async function GET() {
